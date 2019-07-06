@@ -11,10 +11,10 @@ spring:
     name: microservice-config-eureka-client-7001
 eureka:
   instance:
-    prefer-ip-address: true
-    hostname: microservice-config-eureka-client-7001
+    hostname: eureka7001.com
   client:
-    service-url: defaultZone: http://eureka7001.com:7001/eureka/
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
 ---
@@ -27,9 +27,9 @@ spring:
 
 eureka:
   instance:
-    prefer-ip-address: true
-    hostname: microservice-config-eureka-client-7001
+    hostname: eureka7001.com
   client:
-    service-url: defaultZone: http://eureka7001.com:7001/eureka/
+    service-url:
+       defaultZone: http://eureka7001.com:7001/eureka/
     register-with-eureka: false # 当前的eureka-server自己不注册进服务列表中
     fetch-registry: false # 不通过eureka获取注册信息
